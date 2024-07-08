@@ -1,0 +1,2 @@
+import { type EntityOptions } from 'remult';
+export declare function KitEntity<entityType>(key: string, options: EntityOptions<entityType extends new (...args: any) => any ? InstanceType<entityType> : entityType>): (target: any, info?: import("remult/src/remult3/remult3").ClassDecoratorContextStub<entityType extends infer T ? T extends entityType ? T extends new (...args: any) => any ? T : never : never : never> | undefined) => any;

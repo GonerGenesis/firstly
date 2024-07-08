@@ -7,7 +7,7 @@ type ParamValue = string | number | undefined;
 /**
  * Append search params to a string
  */
-export declare const appendSp: (sp?: Record<string, ParamValue | ParamValue[]>, prefix?: '?' | '&') => string;
+export declare const appendSp: (sp?: Record<string, ParamValue | ParamValue[]>, prefix?: "?" | "&") => string;
 /**
  * get the current search params
  *

@@ -1,4 +1,3 @@
-/// <reference types="svelte" />
 import type { ErrorInfo, FindOptions, Repository } from 'remult';
 type TheStoreItem<T> = {
     item: T | undefined;
@@ -17,7 +16,7 @@ export declare const kitStoreItem: <T>(repo: Repository<T>, initValues?: TheStor
      * store.fetch(id)
      * ```
      */
-    fetch: (id: Parameters<Repository<T>['findId']>[0], options?: FindOptions<T>, onNewData?: ((item: T) => void) | undefined) => Promise<void>;
+    fetch: (id: Parameters<Repository<T>["findId"]>[0], options?: FindOptions<T>, onNewData?: (item: T) => void) => Promise<void>;
     /**
      * `.save()` will `update` or `insert` the current item.
      */

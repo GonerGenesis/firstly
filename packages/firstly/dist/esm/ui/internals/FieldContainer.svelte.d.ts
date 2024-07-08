@@ -1,17 +1,17 @@
 import { SvelteComponent } from "svelte";
 declare const __propDef: {
     props: {
-        label?: string | undefined;
+        label?: string;
         forId: string;
-        required?: boolean | undefined;
-        error?: string | undefined;
+        required?: boolean;
+        error?: string;
         /**
            * example usage for paginate
            * classes={{ label: 'justify-end' }}
            */ classes?: {
-            label?: string | undefined;
-            slot?: string | undefined;
-        } | undefined;
+            label?: string;
+            slot?: string;
+        };
     };
     events: {
         [evt: string]: CustomEvent<any>;

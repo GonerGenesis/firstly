@@ -3,10 +3,10 @@ import { type KitBaseItemLight } from '../../';
 declare const __propDef: {
     props: {
         detail?: KitBaseItemLight | undefined;
-        open?: boolean | undefined;
+        open?: boolean;
         classes?: {
-            root?: string | undefined;
-        } | undefined;
+            root?: string;
+        };
     };
     events: {
         change: CustomEvent<any>;

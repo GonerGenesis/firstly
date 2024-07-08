@@ -1,8 +1,8 @@
 import { SvelteComponent } from "svelte";
 declare const __propDef: {
     props: {
-        text?: string | undefined;
-        hideTooltip?: boolean | undefined;
+        text?: string;
+        hideTooltip?: boolean;
     };
     events: {
         [evt: string]: CustomEvent<any>;

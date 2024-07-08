@@ -1,17 +1,18 @@
 import { SvelteComponent } from "svelte";
+import type { HTMLInputAttributes } from 'svelte/elements';
 import { type KitCell } from '../';
 declare class __sveltets_Render<T extends Record<any, any>> {
     props(): {
         [x: string]: any;
         cell: KitCell<T>;
-        value?: any;
+        value?: HTMLInputAttributes["value"];
         cellsValues?: any;
-        withDedounce?: boolean | undefined;
-        error?: string | undefined;
-        mode?: "view" | "edit" | "filtre" | undefined;
-        focus?: boolean | undefined;
+        withDedounce?: boolean;
+        error?: string;
+        mode?: "edit" | "view" | "filtre";
+        focus?: boolean;
         clearable?: boolean | undefined;
-        disabled?: boolean | undefined;
+        disabled?: boolean;
     };
     events(): {
         createRequest: CustomEvent<any>;

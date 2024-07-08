@@ -3,15 +3,15 @@ import { type KitBaseItem } from '../../..';
 declare const __propDef: {
     props: {
         id: string;
-        disabled?: boolean | undefined;
-        placeholder?: string | undefined;
-        items?: KitBaseItem[] | undefined;
+        disabled?: boolean;
+        placeholder?: string;
+        items?: KitBaseItem[];
         loadOptions?: ((str: string) => Promise<{
             items: KitBaseItem[];
             totalCount: number;
         }>) | undefined;
         values?: string[] | undefined;
-        clearable?: boolean | undefined;
+        clearable?: boolean;
     };
     events: {
         selected: CustomEvent<any>;

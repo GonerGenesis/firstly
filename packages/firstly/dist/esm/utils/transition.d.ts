@@ -1,4 +1,3 @@
-/// <reference types="svelte" />
 import type { TransitionConfig } from 'svelte/transition';
 type FlyAndScaleOptions = {
     y: number;

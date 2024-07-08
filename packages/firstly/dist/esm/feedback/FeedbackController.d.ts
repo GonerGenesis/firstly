@@ -8,14 +8,14 @@ export declare class FeedbackController {
         id: string;
         number: number;
         titleHTML: string;
-        state: 'OPEN' | 'CLOSED';
+        state: "OPEN" | "CLOSED";
     }[]>;
     static getIssue(issueNumber: number): Promise<{
         id: any;
         state: any;
         items: {
             bodyHTML: string;
-            who?: string | undefined;
+            who?: string;
             createdAt: Date;
             public: boolean;
         }[];

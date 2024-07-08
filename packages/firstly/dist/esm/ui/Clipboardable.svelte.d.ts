@@ -6,7 +6,7 @@ declare const __propDef: {
            *
            * Don't put this on an input, if not, when a user will select the input via the mouse, this clipboard will be copied (usually you wanted to paste)!
            */ value: string | null;
-        class?: string | undefined;
+        class?: string;
     };
     events: {
         [evt: string]: CustomEvent<any>;

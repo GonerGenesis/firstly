@@ -6,16 +6,16 @@ declare class __sveltets_Render<T extends Record<any, any>> {
     props(): {
         cells: KitCell<T>[];
         store: KitStoreList<T>;
-        withAdd?: boolean | undefined;
-        withEdit?: boolean | undefined;
-        withDelete?: boolean | undefined;
-        loadingRows?: number | undefined;
+        withAdd?: boolean;
+        withEdit?: boolean;
+        withDelete?: boolean;
+        loadingRows?: number;
         classes?: {
             table: string;
         } | undefined;
         orderBy?: EntityOrderBy<T> | undefined;
         orderByCols?: true | (keyof T)[] | undefined;
-        dicoNoResult?: string | undefined;
+        dicoNoResult?: string;
     };
     events(): {
         refresh: any;

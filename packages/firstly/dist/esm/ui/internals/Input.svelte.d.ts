@@ -3,9 +3,9 @@ import type { HTMLInputAttributes } from 'svelte/elements';
 declare const __propDef: {
     props: {
         [x: string]: any;
-        value?: HTMLInputAttributes['value'];
-        focus?: boolean | undefined;
-        withDedounce?: boolean | undefined;
+        value?: HTMLInputAttributes["value"];
+        focus?: boolean;
+        withDedounce?: boolean;
         class?: string | undefined | null;
     };
     events: {

@@ -4,7 +4,7 @@ import { type KitStoreItem } from '..';
 import type { KitCell } from '../kitCellsBuildor';
 declare class __sveltets_Render<T extends Record<any, any>> {
     props(): {
-        mode?: ("view" | "edit" | "filtre") | undefined;
+        mode?: "view" | "edit" | "filtre";
         cells: KitCell<T>[];
         store: KitStoreItem<T>;
         focusKey?: string | null | undefined;

@@ -1,4 +1,3 @@
-/// <reference types="svelte" />
 import type { FindOptions, Repository } from 'remult';
 type TheStoreList<T> = {
     items: T[];
@@ -26,7 +25,7 @@ export type FindOptionsPlus<T> = FindOptions<T> & {
 export declare const kitStoreList: <T>(repo: Repository<T>, initValues?: TheStoreList<T>) => {
     subscribe: (this: void, run: import("svelte/store").Subscriber<TheStoreList<T>>, invalidate?: import("svelte/store").Invalidator<TheStoreList<T>> | undefined) => import("svelte/store").Unsubscriber;
     manualSet: (info: TheStoreList<T>) => void;
-    fetch: (options?: FindOptionsPlus<T>, onNewData?: ((items?: T[], totalCount?: number) => void) | undefined) => Promise<void>;
+    fetch: (options?: FindOptionsPlus<T>, onNewData?: (items?: T[], totalCount?: number) => void) => Promise<void>;
     listen: (options?: FindOptionsPlus<T>) => Promise<void>;
     getRepo: () => Repository<T>;
 };

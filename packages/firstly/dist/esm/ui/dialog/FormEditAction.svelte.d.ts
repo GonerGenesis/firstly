@@ -6,8 +6,8 @@ declare class __sveltets_Render<T extends any> {
         [x: string]: any;
         store: KitStoreItem<T>;
         type: DialogType;
-        wDelete?: boolean | undefined;
-        textCreate?: string | undefined;
+        wDelete?: boolean;
+        textCreate?: string;
     };
     events(): {
         delete: CustomEvent<any>;

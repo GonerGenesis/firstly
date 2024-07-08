@@ -3,18 +3,18 @@ import { type KitBaseItem } from '../../../';
 declare const __propDef: {
     props: {
         id: string;
-        disabled?: boolean | undefined;
-        placeholder?: string | undefined;
-        items?: KitBaseItem[] | undefined;
-        focus?: boolean | undefined;
+        disabled?: boolean;
+        placeholder?: string;
+        items?: KitBaseItem[];
+        focus?: boolean;
         loadOptions?: ((str: string) => Promise<{
             items: KitBaseItem[];
             totalCount: number;
         }>) | undefined;
         value?: string | undefined;
-        clearable?: boolean | undefined;
-        createOptionWhenNoResult?: boolean | undefined;
-        default_select_if_one_item?: boolean | undefined;
+        clearable?: boolean;
+        createOptionWhenNoResult?: boolean;
+        default_select_if_one_item?: boolean;
     };
     events: {
         selected: CustomEvent<any>;

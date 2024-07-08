@@ -3,17 +3,7 @@ import { type KitBaseItem } from './index.js';
 export declare function isError<T>(object: any): object is ErrorInfo<T>;
 export declare const getFirstInterestingField: <Entity>(repo: Repository<Entity>) => FieldMetadata<any, Entity>;
 export declare const getEntityDisplayValue: <Entity>(repo: Repository<Entity>, row: Entity) => KitBaseItem;
-export declare const getFieldLinkDisplayValue: (field: FieldMetadata, row: any) => import("./KitBaseEnum.js").KitBaseEnumOptions & {
-    id: string;
-    captionSub?: string | (string | undefined)[] | undefined;
-    href?: string | undefined;
-    repo?: Repository<any> | undefined;
-    sub?: {
-        captionPre?: string | undefined;
-        repo?: Repository<any> | undefined;
-        item?: any;
-    } | undefined;
-} & {
+export declare const getFieldLinkDisplayValue: (field: FieldMetadata, row: any) => KitBaseItem & {
     href: string;
 };
 export declare const getEntityDisplayValueFromField: (field: FieldMetadata, row: any) => KitBaseItem & {

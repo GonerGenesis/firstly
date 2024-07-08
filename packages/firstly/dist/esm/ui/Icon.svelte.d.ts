@@ -16,14 +16,14 @@ declare const __propDef: {
            * import Woman from "virtual:icons/mdi/account-tie-woman";
            * <Icon data={mdiAccountTieWoman} style="background-color: blue;" size={"4rem"}></Icon>
            * ```
-           */ data?: string | string[] | undefined;
-        size?: string | number | undefined;
+           */ data?: string | string[];
+        size?: string | number;
         caption?: string | undefined;
         /**
            * By default, svg are not rendered on the server side.
            * But the size will be respected to not have glitch on the client side when the icon is coming.
            * @default false
-           */ ssr?: boolean | undefined;
+           */ ssr?: boolean;
         class?: string | string[] | undefined;
         style?: string | string[] | undefined;
     };

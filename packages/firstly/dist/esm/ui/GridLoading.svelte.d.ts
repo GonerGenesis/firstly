@@ -3,7 +3,7 @@ import type { Align } from './index.js';
 declare const __propDef: {
     props: {
         columns: Align[];
-        loadingRows?: number | undefined;
+        loadingRows?: number;
     };
     events: {
         [evt: string]: CustomEvent<any>;

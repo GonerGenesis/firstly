@@ -2,10 +2,10 @@ import { SvelteComponent } from "svelte";
 import './LibIcon';
 declare const __propDef: {
     props: {
-        label?: string | undefined;
+        label?: string;
         page: number;
         totalCount?: number | undefined | null;
-        pageSize?: number | undefined;
+        pageSize?: number;
     };
     events: {
         [evt: string]: CustomEvent<any>;

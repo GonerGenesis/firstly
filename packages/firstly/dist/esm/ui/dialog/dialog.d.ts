@@ -36,7 +36,7 @@ export type DialogMetaDataInternal<entityType = any> = DialogMetaData<entityType
 export declare const dialog: {
     confirm: (topic: string, text: string, icon?: string) => Promise<ResultClose<any>>;
     confirmDelete: (topic: string) => Promise<ResultClose<any>>;
-    form: <entityType>(type: 'insert' | 'update' | 'view', topic: string, repo: Repository<entityType>, cells: KitCellsInput<entityType>, options?: {
+    form: <entityType>(type: "insert" | "update" | "view", topic: string, repo: Repository<entityType>, cells: KitCellsInput<entityType>, options?: {
         defaults?: Partial<entityType>;
         classes?: DialogClasses;
         noThrow?: boolean;

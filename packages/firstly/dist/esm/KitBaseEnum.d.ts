@@ -27,9 +27,9 @@ export declare class KitBaseEnum<Entity = any> {
         $nin?: Entity[] | undefined;
     } | {
         $id: import("remult").ValueFilter<Entity extends {
-            id?: number | undefined;
+            id?: number;
         } ? number : string>;
     } | import("remult").EntityFilter<Entity> | NonNullable<Entity>;
 }
-export declare const getEnum: <T extends KitBaseEnum<any>>(baseEnum: ClassType<T>, id: string | undefined | null) => T | undefined;
-export declare const getEnums: <T extends KitBaseEnum<any>>(baseEnum: ClassType<T>) => T[];
+export declare const getEnum: <T extends KitBaseEnum>(baseEnum: ClassType<T>, id: string | undefined | null) => T | undefined;
+export declare const getEnums: <T extends KitBaseEnum>(baseEnum: ClassType<T>) => T[];

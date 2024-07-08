@@ -3,7 +3,7 @@ import { KitBaseEnum } from '../';
 declare const __propDef: {
     props: {
         [x: string]: any;
-        isLoading?: boolean | undefined;
+        isLoading?: boolean;
         class?: string | undefined | null;
         permission?: KitBaseEnum[] | KitBaseEnum | undefined;
     };

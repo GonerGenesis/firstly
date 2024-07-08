@@ -3,9 +3,9 @@ import type { KitBaseItem } from '../../../';
 declare const __propDef: {
     props: {
         id: string;
-        disabled?: boolean | undefined;
-        placeholder?: string | undefined;
-        items?: KitBaseItem[] | undefined;
+        disabled?: boolean;
+        placeholder?: string;
+        items?: KitBaseItem[];
         value?: string | number | undefined;
     };
     events: {

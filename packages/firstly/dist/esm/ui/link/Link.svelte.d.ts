@@ -4,8 +4,8 @@ declare const __propDef: {
     props: {
         [x: string]: any;
         href: string;
-        target?: HTMLAnchorAttributes['target'];
-        kind?: "info" | "ghost" | undefined;
+        target?: HTMLAnchorAttributes["target"];
+        kind?: "info" | "ghost";
         class?: string | undefined | null;
     };
     events: {

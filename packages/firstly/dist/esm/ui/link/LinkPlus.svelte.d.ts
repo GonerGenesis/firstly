@@ -3,8 +3,8 @@ import { type KitBaseItemLight } from '../..';
 declare const __propDef: {
     props: {
         item: KitBaseItemLight | undefined;
-        noIcon?: boolean | undefined;
-        captionSubStyle?: "none" | "under" | "inline" | undefined;
+        noIcon?: boolean;
+        captionSubStyle?: "under" | "inline" | "none";
     };
     events: {
         [evt: string]: CustomEvent<any>;

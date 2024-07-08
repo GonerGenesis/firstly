@@ -2,15 +2,15 @@ import { SvelteComponent } from "svelte";
 declare const __propDef: {
     props: {
         [x: string]: any;
-        name?: string | null | undefined;
-        id?: string | undefined;
-        rows?: number | undefined;
-        placeholder?: string | undefined;
-        focus?: boolean | undefined;
-        value?: string | undefined;
-        readonly?: boolean | undefined;
-        error?: false | undefined;
-        align?: "left" | "right" | undefined;
+        name?: string | null;
+        id?: string;
+        rows?: number;
+        placeholder?: string;
+        focus?: boolean;
+        value?: string;
+        readonly?: boolean;
+        error?: false;
+        align?: `left` | `right`;
     };
     events: {
         input: CustomEvent<any>;
